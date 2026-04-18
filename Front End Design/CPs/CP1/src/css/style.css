@@ -1,0 +1,51 @@
+.logo_VinheriaAgnello{
+    width: 200px;
+    height: 200px;
+}
+
+.tiposVinho div {
+        width: 180px;
+        margin: 30px;
+        display: inline-block;
+        vertical-align: top;
+}
+/* classes e ids */
+.tiposVinho {
+    text-align: center;
+}   
+.tiposVinho img {
+    width: 100%;
+    height: auto;
+}
+.tiposVinho h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.tiposVinho p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+#container-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffe600;
+}
+
+
+.titulo-principal {
+    color: #8B0000; 
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.frase-destaque {
+    color: #4B0082; /*cor elegante*/
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
+    margin: 10px 0;
+}

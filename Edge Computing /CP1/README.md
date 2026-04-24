@@ -1,4 +1,4 @@
-## Nome dos integrantes do grupo:
+<img width="2291" height="1001" alt="CP1 - Edge Computing" src="https://github.com/user-attachments/assets/f2a83842-7813-4fc5-9f83-fda4cdfbf63f" />## Nome dos integrantes do grupo:
 - Diego Rayhan - rm569129
 - Gabriel Almeida - rm573690
 - Kaue Tsuyoshi - rm571192
@@ -25,6 +25,7 @@ Para executar o projeto, é necessario fazer a montagem do circuito disponibiliz
 
 ### Esquema de montagem
 https://www.tinkercad.com/things/6IUS10Zkxw0/editel?returnTo=%2Fdashboard&sharecode=QXQTiaANeu-kN4Gw2MQI60Xs3a0v1MToB0qx0jS21FM
+<img width="2291" height="1001" alt="CP1 - Edge Computing" src="https://github.com/user-attachments/assets/d6be9de1-029d-4192-9793-d85533b8a192" />
 
 ## Codigo Utilizado:
 ```

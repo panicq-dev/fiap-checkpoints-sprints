@@ -1,8 +1,8 @@
 ## Nome dos integrantes do grupo:
-Diego Rayhan - rm569129
-Gabriel Almeida - rm573690
-Kaue Tsuyoshi - rm571192
-Roberto Dantas - rm566716
+- Diego Rayhan - rm569129
+- Gabriel Almeida - rm573690
+- Kaue Tsuyoshi - rm571192
+- Roberto Dantas - rm566716
 
 ## Turma: 1-ESPV
 ## Ano: 2026

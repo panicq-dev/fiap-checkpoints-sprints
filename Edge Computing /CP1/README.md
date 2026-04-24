@@ -17,13 +17,13 @@ De posse dos dados coletados, implemente um sistema de alarme, utilizando LEDs, 
 Quando a luminosidade estiver em nível de alerta, deve soar uma buzina (buzzer) por 3 segundos. A buzina volta a soar caso a luminosidade permaneça em nível de alerta.
 
 ## Descrição do desafio
-### Desenvolvimento do projeto
-Enfrentamos alguns desafios durante o desenvolvimento, tais como a regulagem da luminosidade necessaria para soar o alarme e o led amarelo
+### 1. Desenvolvimento do projeto
+Enfrentamos alguns desafios durante o desenvolvimento, tais como a regulagem da luminosidade necessaria para soar o alarme, e com o pio do buzzer no arduino
 
-### Como executar o projeto
+### 2. Como executar o projeto
 Para executar o projeto, é necessario fazer a montagem do circuito disponibilizado, tambem se da necessario uma regulagem do sensor LDR.
 
-### Esquema de montagem
+## Esquema de montagem
 https://www.tinkercad.com/things/6IUS10Zkxw0/editel?returnTo=%2Fdashboard&sharecode=QXQTiaANeu-kN4Gw2MQI60Xs3a0v1MToB0qx0jS21FM
 <img width="2291" height="1001" alt="CP1 - Edge Computing" src="https://github.com/user-attachments/assets/f2a83842-7813-4fc5-9f83-fda4cdfbf63f" />
 

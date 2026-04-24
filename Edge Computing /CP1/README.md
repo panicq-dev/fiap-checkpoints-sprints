@@ -27,7 +27,8 @@ Para executar o projeto, é necessario fazer a montagem do circuito disponibiliz
 https://www.tinkercad.com/things/6IUS10Zkxw0/editel?returnTo=%2Fdashboard&sharecode=QXQTiaANeu-kN4Gw2MQI60Xs3a0v1MToB0qx0jS21FM
 
 ## Codigo Utilizado:
-`// Definição de variaveis:
+```
+// Definição de variaveis:
 #define ledRed 2 
 #define ledYellow 3 
 #define ledGreen 4 
@@ -83,8 +84,8 @@ void loop() {
   }
 
   delay(500);
-}`
-
+}
+```
 ## Pré-requisitos:
 Para realizar o projeto foram necessarios os seguintes componentes:
 - 1 Arduino Uno (ou algum arduino de preferência)

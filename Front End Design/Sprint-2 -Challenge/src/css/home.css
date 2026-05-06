@@ -1,0 +1,36 @@
+
+
+.secao { 
+    padding: 80px 40px; 
+}
+.div-section { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.titulo-produto { 
+    font-size: 14px; 
+    color: #888; 
+    margin-bottom: 12px; 
+    text-transform: uppercase; 
+}
+.subtitulo-produto { 
+    font-size: 48px; 
+    font-weight: bold; 
+    line-height: 1.2; 
+    margin-bottom: 16px; 
+}
+.descricao-produto { 
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.6; 
+    max-width: 600px; 
+}
+
+
+.media-produto {
+    background: #f0f0f0;
+    width: 50%; aspect-ratio: 16/9;
+    display: flex; align-items: center; justify-content: center;
+    color: #aaa; font-size: 14px; border-radius: 8px;
+    margin-top: 32px;
+}

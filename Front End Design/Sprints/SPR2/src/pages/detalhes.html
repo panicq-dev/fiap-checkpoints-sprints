@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteZ | Sobre Nós</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/detalhes.css">
+    <link rel="stylesheet" href="./../css/slideshow.css">
+    <script src="https://kit.fontawesome.com/9a6d6b106b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav class="menuNav">
+                <a href="./../../index.html" class="logo">
+                    <img src="./../img/atom-logo.png" alt="Atom Logo">
+                </a>
+                <ul class="menuNav-list">
+                    <li><a href="./../../index.html" class="menuNav-item">Home</a></li>
+                    <li><a href="./equipe.html" class="menuNav-item">Sobre</a></li>
+                    <li><a href="#" class="menuNav-item ativo">Detalhes</a></li>
+                    <li><a href="./contato.html" class="menuNav-item">Contato</a></li>
+                </ul>
+                <a href="./inscricao.html" class="menuNav-item" style="margin-right: 20px;">BetaTesters</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="beta-tester-info">
+        Beta Tester: <span id="beta-tester-name"></span>
+        </div>
+        <section class="conteudo-detalhado">
+            <div class="diagrama-section">
+                <div class="texto-bloco">
+                    <span class="tagline">Pitch JOVI</span>
+                    <h2>Slides</h2>
+                    <p>Slides utilizados na 1ª apresentação da banca</p>
+                </div>
+
+                <div class="slideshow-pitch">
+                    <img id="slide-pitch" src="" alt="Slide Pitch JOVI">
+                    <button id="btn-anterior-pitch">&#8592;</button>
+                    <button id="btn-proximo-pitch">&#8594;</button>
+                    <div id="pontos-pitch"></div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="conteudo-detalhado">
+                <!--  DIAGRAMA DO CORDEIRO  -->
+                <div class="diagrama-section">
+                    <div class="texto-bloco">
+                        <span class="tagline">Modelagem</span>
+                        <h2>Diagrama de Casos de Uso</h2>
+                        <p>O diagrama abaixo detalha as interações entre os usuários e as funcionalidades principais do sistema, garantindo um fluxo de experiência otimizado.</p>
+                    </div>
+                    <div class="decor-box">
+                        <img src="./../img/diagrama_caso_de_uso.jpeg" alt="Diagrama de Casos de Uso">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <section class="conteudo-detalhado">
+            <div class="diagrama-section">
+                <div class="texto-bloco">
+                    <span class="tagline">Ferramenta de Estudos</span>
+                    <h2>Screenshots</h2>
+                    <p>São imagens retiradas da ideia principal do projeto. Protótipado no Figma.</p>
+                </div>
+
+                <div class="slideshow-screenshots">
+                    <img id="slide-screenshots" src="" alt="Slide de Screenshots">
+                    <button id="btn-anterior-screenshots">&#8592;</button>
+                    <button id="btn-proximo-screenshots">&#8594;</button>
+                    <div id="pontos-screenshots"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">
+                © 2026 Atom Technology. - São Paulo, Brasil.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="./../js/slideshow.js"></script>                 
+    <script src="./../js/detalhes.js"></script>           
+</body>
+
+</html>

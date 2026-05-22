@@ -7,12 +7,6 @@ O espaco e alimentado e mantido colaborativamente por mim e pelos integrantes do
 ## Objetivo
 O foco deste repositorio e aplicar na pratica os conceitos de engenharia de software, arquitetura de sistemas, banco de dados e inteligencia de negocios aprendidos em aula, documentando nossa evolucao tecnica e trabalho em equipe.
 
-## Tecnologias e Ferramentas Frequentes
-Dependendo do escopo do projeto, as solucoes sao construidas utilizando:
-* Linguagens: C#, Kotlin, Python
-* Banco de Dados: SQL (MySQL)
-* Business Intelligence: Power BI
-
 ## Integrantes do Grupo
 * [Gabriel] - GitHub: [@panicq-dev](https://github.com/seu-usuario)
 * [Roberto Dantas] - GitHub: [@Ro005](https://github.com/Roberto-Dantas)

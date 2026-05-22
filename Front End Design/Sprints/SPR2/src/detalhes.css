@@ -1,0 +1,56 @@
+/* DIAGRAMA DO CORDEIRO. */
+.diagrama-section {
+    margin: 100px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+
+}
+
+.diagrama-section .texto-bloco {
+    text-align: center;
+}
+
+.diagrama-section h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.img-placeholder {
+    width: 100%;
+    min-height: 400px;
+    background: #252525;
+    border-radius: 20px;
+    border: 2px dashed #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.decor-box {
+    padding: 20px;
+    border: 2px dashed var(--azul-principal);
+    color: var(--azul-principal);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* @MEDIA (RESPONSIVIDADE) */
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .img-placeholder {
+        min-height: 250px;
+    }
+}

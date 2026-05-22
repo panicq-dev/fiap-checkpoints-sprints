@@ -1,9 +1,11 @@
 ## Nome dos integrantes do grupo:
+
 | Integrantes | RM |
-| Diego Rayhan | rm569129
-| Gabriel Almeida | rm573690
-| Kaue Tsuyoshi | rm571192
-| Roberto Dantas | rm566716
+| --- | :---: |
+| `Diego Rayhan Jalhium Machado` | 569129 |
+| `Gabriel Almeida dos Santos` | 573690 |
+| `Kaue Tsuyoshi Horoiwa` | 571192 |
+| `Roberto Dantas Melo Filho` | 566716 |
 
 ## Turma: 1-ESPV
 ## Ano: 2026

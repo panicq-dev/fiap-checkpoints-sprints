@@ -59,6 +59,41 @@ https://wokwi.com/projects/464585929244055553
 DHT_Unified dht(DHTPIN, DHTTYPE);
 LiquidCrystal_I2C lcd(ende, col, lin);
 
+// emojis
+byte lampada[8] = {
+  B01110,
+  B10001,
+  B10101,
+  B10101,
+  B01110,
+  B01010,
+  B01010,
+  B00100,
+};
+
+byte gota[8] = {
+  B00100,
+  B01110,
+  B01110,
+  B11111,
+  B11111,
+  B11111,
+  B01110,
+  B00000,
+};
+
+byte termometro[8] = {
+  B00100,
+  B01010,
+  B01010,
+  B01010,
+  B01010,
+  B10001,
+  B10001,
+  B01110,
+};
+
+
 // Luz
 #define LUZ_OK 400
 #define LUZ_ALERTA 700
@@ -93,6 +128,11 @@ void setup() {
 
   // ligar o dht
   dht.begin();
+
+  // criar char
+  lcd.createChar(0, lampada);
+  lcd.createChar(1, gota);
+  lcd.createChar(2, termometro);
 
   Serial.begin(9600);
 }
@@ -230,18 +270,24 @@ void loop() {
 
       lcd.setCursor(0, 0);
       lcd.print("Temp. ALTA");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(2));
 
     } else if (tempBaixa) { // Se a temperatura estiver baixa, avisar no lcd.
       lcd.clear();
 
       lcd.setCursor(0, 0);
       lcd.print("Temp. BAIXA");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(2));
 
     } else { 
       lcd.clear();
 
       lcd.setCursor(0, 0);
       lcd.print("Temperatura OK");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(2));
     }
 
     lcd.setCursor(0, 1); 
@@ -258,18 +304,24 @@ void loop() {
 
       lcd.setCursor(0, 0);
       lcd.print("Umidade ALTA");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(1));
 
     } else if (umidadeBaixa) { // Se a umidade estiver abaixo da média, avisar no lcd.
       lcd.clear();
 
       lcd.setCursor(0, 0);
       lcd.print("Umidade BAIXA");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(1));
 
     } else {
       lcd.clear();
 
       lcd.setCursor(0, 0);
       lcd.print("Umidade OK");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(1));
     }
 
     lcd.setCursor(0, 1);
@@ -285,18 +337,24 @@ void loop() {
 
       lcd.setCursor(0, 0);
       lcd.print("Muito claro");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(0));
 
     } else if (luminosidade <= LUZ_ALERTA) { // Se a luz estiver a meia luz, avisar no lcd.
       lcd.clear();
 
       lcd.setCursor(0, 0);
       lcd.print("Meia Luz");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(0));
 
     } else { // Se a luz estiver claro, avisar no lcd.
       lcd.clear();
       
       lcd.setCursor(0, 0);
       lcd.print("Ambiente ideal");
+      lcd.setCursor(15, 0);
+      lcd.write(byte(0));
     }
 
     lcd.setCursor(0, 1);

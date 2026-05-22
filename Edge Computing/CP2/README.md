@@ -31,7 +31,7 @@ Outro ponto de atenção foi a criação do sistema de navegação entre três t
 Para executar o projeto, é necessário realizar a montagem do circuito conforme o esquema disponibilizado no link da simulação. Após a montagem, instale as bibliotecas LiquidCrystal_I2C e Adafruit DHT Unified no IDE do Arduino e faça o upload do código para a placa. Ajustes nos limites do LDR (LUZ_OK e LUZ_ALERTA) podem ser necessários dependendo das condições de iluminação do ambiente.
 
 ## Esquema de montagem
-https://wokwi.com/projects/464585929244055553
+https://wokwi.com/projects/464765521127103489
 <img width="1161" height="613" alt="CP2" src="https://github.com/user-attachments/assets/853a7602-08c7-441b-9668-a9b2b484b35c" />
 
 ## Codigo Utilizado:
@@ -111,7 +111,6 @@ int tela = 0;
 float mediaTemp = 0;
 float mediaUmidade = 0;
 
-unsigned long tempoAnterior = 0;
 
 void setup() {
 
@@ -184,6 +183,21 @@ void loop() {
     somaUmidade = 0;
 
     contador = 0;
+  }
+
+  if (millis() < 5000) {
+
+    lcd.clear();
+
+    lcd.setCursor(0, 0);
+    lcd.print("Checkpoint 2");
+
+    lcd.setCursor(0, 1);
+    lcd.print("Edge Computing");
+
+    delay(1000);
+
+    return;
   }
 
   // Luz

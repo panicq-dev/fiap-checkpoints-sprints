@@ -392,3 +392,4 @@ Para realizar o projeto foram necessarios os seguintes componentes:
 - 17 Jumpers 
 
 ## Video Explicativo:
+[Link do video](https://drive.google.com/file/d/1eBJ1RMEG-wECMvsTU3AMPtAPvIaJzhVE/view?usp=sharing)

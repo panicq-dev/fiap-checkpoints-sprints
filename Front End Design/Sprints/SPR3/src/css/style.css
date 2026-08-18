@@ -1,0 +1,197 @@
+/* 
+=================================
+VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
+=================================
+*/
+:root {
+    --branco: #fff;
+    --cor-fonte: #dbdbdb;
+
+    --azul-principal: #4169E1;
+    --azul-principal-hover: #5274db;
+
+    --bg-dark: #1d1d1d;
+    --bg-header: rgba(32, 32, 32, 0.95);
+
+    --borda: #333;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-dark);
+    color: var(--cor-fonte);
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.icon{
+   color: #5274db; 
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* 
+=======================
+CONFIGURAÇÃO DA NAV-BAR
+=======================
+*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    height: 86px;
+
+    background: var(--bg-header);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--borda);
+}
+
+.menuNav {
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.logo img {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.menuNav-item {
+    color: var(--branco);
+    font-size: 14px;
+
+    transition: color 0.3s;
+}
+
+.menuNav-item:hover,
+.menuNav-item.ativo {
+    color: var(--azul-principal);
+}
+
+
+.menuNav ul li a:hover {
+    color: var(--azul-principal);
+}
+
+
+.menuNav-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    flex: 1;
+}
+
+.menuNav-item {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* 
+=======
+FOOTER
+=======
+*/
+
+footer {
+    margin-top: auto;
+    padding: 40px;
+    text-align: center;
+    background: var(--azul-principal);
+    color: var(--branco);
+    font-size: 13px;
+}
+
+/* 
+======================
+@keyframes - animações
+======================
+*/
+.fade{
+    animation: fade 1s ease-in-out forwards;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @MEDIA (RESPONSIVIDADE) */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .menuNav {
+        gap: 16px;
+    }
+
+    .menuNav-list {
+        gap: 16px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+}
+
+
+.beta-tester-info{
+    display: none;
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #e8ff47b5;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 999;
+}
